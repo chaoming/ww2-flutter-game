@@ -70,6 +70,33 @@ lib/
 └── utils/           # Hex math, constants, helpers
 ```
 
+## Claude Code Configuration
+
+### Skills (Auto-invoked)
+- **flutter-test** - Run and analyze Flutter tests
+- **hex-math** - Reference for hex grid algorithms (coordinates, neighbors, pathfinding)
+- **game-balance** - Validate unit stats against requirements
+- **issue-workflow** - Manage GitHub issues (start, complete, blockers)
+
+### Subagents
+- **code-reviewer** - Review Dart/Flutter code after implementing features
+- **game-designer** - Validate game mechanics against GAME_REQUIREMENTS.md
+- **ui-reviewer** - Review widgets for structure, accessibility, responsiveness
+
+### Slash Commands
+- `/issue <number>` - Load GitHub issue and plan implementation
+- `/done [issue-number]` - Commit changes and optionally close issue
+- `/balance` - Quick reference for unit stats and combat values
+
+### Hooks
+- Auto-format Dart files after Edit/Write operations
+
+## Git Workflow
+
+- Claude commits changes but does NOT push
+- User handles `git push` manually
+
 ## Key References
 
 - [GAME_REQUIREMENTS.md](GAME_REQUIREMENTS.md) - Detailed game design document with unit stats, terrain effects, and combat formulas
+- [GitHub Project](https://github.com/users/chaoming/projects/3) - Roadmap and issue tracking
