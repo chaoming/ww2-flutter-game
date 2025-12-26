@@ -29,6 +29,10 @@ A Flutter-based WW2 turn-based strategy game featuring hexagonal map gameplay wi
 - Zone of control affects enemy movement
 - Air units must return to airfields
 
+## Flutter Path
+
+Flutter is installed at: `/Users/chaomingli/Projects/flutter/bin/flutter`
+
 ## Build Commands
 
 ```bash
